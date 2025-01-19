@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/FeatherCareOps/__init__.py
+src/FeatherCareOps.egg-info/PKG-INFO
+src/FeatherCareOps.egg-info/SOURCES.txt
+src/FeatherCareOps.egg-info/dependency_links.txt
+src/FeatherCareOps.egg-info/top_level.txt
+src/FeatherCareOps/components/__init__.py
+src/FeatherCareOps/config/__init__.py
+src/FeatherCareOps/config/configuration.py
+src/FeatherCareOps/constants/__init__.py
+src/FeatherCareOps/entity/__init__.py
+src/FeatherCareOps/pipeline/__init__.py
+src/FeatherCareOps/utils/__init__.py
