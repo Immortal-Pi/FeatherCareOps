@@ -16,14 +16,14 @@ This repository demonstrates the implementation of MLOps principles in the devel
 - **Project Workflow**:
     - Data ingestion and preprocessing.
     - Model training and evaluation.
-    - Deployment with Docker and AWS.
+    - Deployment with Docker and AWS/Azure
 
 # How to run?
 
 ### STEPS:
 Clone the repository
 ```bash
-https://github.com/Immortal-Pi/ML-project-with-MLFlow
+https://github.com/Immortal-Pi/FeatherCareOps
 ```
 
 ### STEP 01- Create a conda environment after opening the repository
@@ -119,4 +119,4 @@ dagshub.init(repo_owner='your-github-username', repo_name='your-repository-name'
 - **Data Utilities**: YAML, JSON handling, and custom preprocessing functions
 
 ## Conclusion
-This project highlights the integration of MLOps principles in managing the entire machine learning lifecycle. While the focus was on building a wine quality prediction model using regression techniques, the core objective was to emphasize the importance of project structure, automation of workflows, and the use of tools like Docker for deployment. Additionally, a CI/CD pipeline was implemented to automate the testing, building, and deployment processes, ensuring consistent and reliable updates to the application. This project serves as a foundation for understanding how to design scalable, maintainable, and efficient ML pipelines, ensuring reproducibility and streamlined collaboration in real-world scenarios.
+This project highlights the integration of MLOps principles in managing the entire machine learning lifecycle. While the focus was on building a disease classification prediction model using regression techniques, the core objective was to emphasize the importance of project structure, automation of workflows, and the use of tools like Docker for deployment. Additionally, a CI/CD pipeline was implemented to automate the testing, building, and deployment processes, ensuring consistent and reliable updates to the application. This project serves as a foundation for understanding how to design scalable, maintainable, and efficient ML pipelines, ensuring reproducibility and streamlined collaboration in real-world scenarios.
