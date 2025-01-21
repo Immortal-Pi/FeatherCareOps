@@ -1,7 +1,10 @@
 from FeatherCareOps.constants import * 
 from FeatherCareOps.utils.common import read_yaml,create_directories
-from FeatherCareOps.entity.config_entity import DataIngestionConfig, PrepareBaseModelConfig
-
+from FeatherCareOps.entity.config_entity import (DataIngestionConfig, 
+                                                 PrepareBaseModelConfig,
+                                                 PrepareCallBackConfig
+                                                 )
+import os 
 
 class ConfigurationManager:
     def __init__(
@@ -44,4 +47,21 @@ class ConfigurationManager:
             params_weights=self.params.WEIGHTS,
         )
         return prepare_base_model_config
+    
+    def get_prepare_callback_config(self)-> PrepareCallBackConfig:
+        config=self.config.prepare_callbacks
+        package_dir=os.path.dirname(config.checkpoint_model_filepath)
+
+        create_directories([
+            Path(package_dir),
+            Path(config.tensorboard_root_log_dir)
+
+        ])
+
+        prepare_callback_config=PrepareCallBackConfig(
+            root_dir=Path(config.root_dir),
+            tensorboard_root_log_dir=Path(config.tensorboard_root_log_dir),
+            checkpoint_model_filepath=Path(config.checkpoint_model_filepath)
+        )
+        return prepare_callback_config
     
