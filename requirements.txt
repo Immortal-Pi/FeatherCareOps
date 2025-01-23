@@ -1,8 +1,9 @@
-tensorflow
+tensorflow==2.12
 pandas 
 dvc 
+mlflow==2.2.2
 notebook
-numpy<2.1.0
+numpy
 matplotlib
 seaborn 
 python-box==6.0.2
@@ -15,5 +16,4 @@ scipy
 Flask
 Flask-Cors
 gdown
-urllib 
 -e .
