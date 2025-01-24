@@ -480,3 +480,49 @@ x=========x]
 [2025-01-23 21:57:21,875:INFO:main:>>>>> stage Evaluation stage completed <<<<<
 
 x==========x]
+[2025-01-24 08:58:02,888:INFO:stg_01_data_ingestion:>>>> stage DATA INGESTION STAGE started <<<<]
+[2025-01-24 08:58:02,893:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2025-01-24 08:58:02,896:INFO:common:yaml file: params.yaml loaded successfully]
+[2025-01-24 08:58:02,898:INFO:common:created directory at :artifacts]
+[2025-01-24 08:58:02,899:INFO:data_ingestion:Downlading data from https://drive.google.com/file/d/1yXVQRrUoPNWYxEqpvLy-OmSF40quWeSv/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-24 08:58:10,104:INFO:data_ingestion:Downloaded data from https://drive.google.com/file/d/1yXVQRrUoPNWYxEqpvLy-OmSF40quWeSv/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2025-01-24 08:58:20,242:INFO:data_ingestion:Extracted the zip file contents]
+[2025-01-24 08:58:20,243:INFO:stg_01_data_ingestion:>>>> stage DATA INGESTION STAGE completed <<<< 
+
+ x==========x]
+[2025-01-24 08:58:59,969:INFO:stg_02_prepare_base_model:>>>> stage Prepare base model started <<<<]
+[2025-01-24 08:58:59,974:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2025-01-24 08:58:59,976:INFO:common:yaml file: params.yaml loaded successfully]
+[2025-01-24 08:58:59,977:INFO:common:created directory at :artifacts/prepare_base_model]
+[2025-01-24 08:59:00,567:WARNING:saving_utils:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2025-01-24 08:59:00,819:INFO:stg_02_prepare_base_model:>>>> stage Prepare base model completed <<<<
+
+x==========x]
+[2025-01-24 09:02:43,155:INFO:stg_03_training:**********************]
+[2025-01-24 09:02:43,156:INFO:stg_03_training:>>>>> stage TRAINING started <<<<<]
+[2025-01-24 09:02:43,160:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2025-01-24 09:02:43,162:INFO:common:yaml file: params.yaml loaded successfully]
+[2025-01-24 09:02:43,164:INFO:common:created directory at :artifacts\prepare_callbacks\checkpoint_dir]
+[2025-01-24 09:02:43,164:INFO:common:created directory at :artifacts\prepare_callbacks\tensorboard_log_dir]
+[2025-01-24 09:02:43,165:INFO:common:created directory at :artifacts\training]
+[2025-01-24 09:07:18,596:INFO:stg_03_training:>>>> stage TRAINING completed <<<<<
+
+x=========x]
+[2025-01-24 09:12:56,091:INFO:stg_03_training:**********************]
+[2025-01-24 09:12:56,092:INFO:stg_03_training:>>>>> stage TRAINING started <<<<<]
+[2025-01-24 09:12:56,095:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2025-01-24 09:12:56,098:INFO:common:yaml file: params.yaml loaded successfully]
+[2025-01-24 09:12:56,099:INFO:common:created directory at :artifacts\prepare_callbacks\checkpoint_dir]
+[2025-01-24 09:12:56,099:INFO:common:created directory at :artifacts\prepare_callbacks\tensorboard_log_dir]
+[2025-01-24 09:12:56,101:INFO:common:created directory at :artifacts\training]
+[2025-01-24 09:18:19,830:INFO:stg_03_training:>>>> stage TRAINING completed <<<<<
+
+x=========x]
+[2025-01-24 09:37:58,895:INFO:stg_04_model_evaluation:*****************]
+[2025-01-24 09:37:58,896:INFO:stg_04_model_evaluation:>>>>> stage Evaluation stage started <<<<<]
+[2025-01-24 09:37:58,907:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2025-01-24 09:37:58,909:INFO:common:yaml file: params.yaml loaded successfully]
+[2025-01-24 09:38:42,676:INFO:common:json file saved at: {path}]
+[2025-01-24 09:38:42,676:INFO:stg_04_model_evaluation:>>>>> stage Evaluation stage completed <<<<<
+
+x==========x]

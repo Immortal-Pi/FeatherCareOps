@@ -33,14 +33,14 @@ stages:
       - IMAGE_SIZE
       - EPOCHS 
       - BATCH_SIZE
-      - ARUGMENTATION
+      - AUGMENTATION
     outs:
-      - artifacts/training/models.h5
+      - artifacts/training/model.h5
 
   evaluation:
-    cmd: python src/FeatherCareOps/pipeline/stg_03_evaluation.py
+    cmd: python src/FeatherCareOps/pipeline/stg_04_model_evaluation.py
     deps:
-      - src/FeatherCareOps/pipeline/stg_03_evaluation.py
+      - src/FeatherCareOps/pipeline/stg_04_model_evaluation.py
       - config/config.yaml
       - artifacts/data_ingestion/Chicken_disease 
       - artifacts/training/model.h5
@@ -48,5 +48,5 @@ stages:
       - IMAGE_SIZE
       - BATCH_SIZE
     metrics:
-      - scores.json
+      - scores.json:
           cache: false
