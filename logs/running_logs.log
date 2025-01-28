@@ -526,3 +526,21 @@ x=========x]
 [2025-01-24 09:38:42,676:INFO:stg_04_model_evaluation:>>>>> stage Evaluation stage completed <<<<<
 
 x==========x]
+[2025-01-27 18:48:18,818:INFO:stg_03_training:**********************]
+[2025-01-27 18:48:18,819:INFO:stg_03_training:>>>>> stage TRAINING started <<<<<]
+[2025-01-27 18:48:18,831:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2025-01-27 18:48:18,835:INFO:common:yaml file: params.yaml loaded successfully]
+[2025-01-27 18:48:18,836:INFO:common:created directory at :artifacts\prepare_callbacks\checkpoint_dir]
+[2025-01-27 18:48:18,837:INFO:common:created directory at :artifacts\prepare_callbacks\tensorboard_log_dir]
+[2025-01-27 18:48:18,837:INFO:common:created directory at :artifacts\training]
+[2025-01-27 18:54:02,334:INFO:stg_03_training:>>>> stage TRAINING completed <<<<<
+
+x=========x]
+[2025-01-27 18:54:12,251:INFO:stg_04_model_evaluation:*****************]
+[2025-01-27 18:54:12,251:INFO:stg_04_model_evaluation:>>>>> stage Evaluation stage started <<<<<]
+[2025-01-27 18:54:12,259:INFO:common:yaml file: config\config.yaml loaded successfully]
+[2025-01-27 18:54:12,261:INFO:common:yaml file: params.yaml loaded successfully]
+[2025-01-27 18:55:01,048:INFO:common:json file saved at: {path}]
+[2025-01-27 18:55:01,049:INFO:stg_04_model_evaluation:>>>>> stage Evaluation stage completed <<<<<
+
+x==========x]

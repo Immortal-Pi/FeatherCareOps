@@ -73,7 +73,7 @@ stages:
       params.yaml:
         AUGMENTATION: true
         BATCH_SIZE: 16
-        EPOCHS: 1
+        EPOCHS: 2
         IMAGE_SIZE:
         - 224
         - 224
@@ -81,7 +81,7 @@ stages:
     outs:
     - path: artifacts/training/model.h5
       hash: md5
-      md5: 4631a8a68b725a539ddb1cdb7ccc3efa
+      md5: 0d27968ec1f28c1de43d025367072541
       size: 59337520
   evaluation:
     cmd: python src/FeatherCareOps/pipeline/stg_04_model_evaluation.py
@@ -93,7 +93,7 @@ stages:
       nfiles: 4160
     - path: artifacts/training/model.h5
       hash: md5
-      md5: 4631a8a68b725a539ddb1cdb7ccc3efa
+      md5: 0d27968ec1f28c1de43d025367072541
       size: 59337520
     - path: config/config.yaml
       hash: md5
@@ -113,5 +113,5 @@ stages:
     outs:
     - path: scores.json
       hash: md5
-      md5: 13d2364a93b8ed32e9ec95614c28143f
-      size: 72
+      md5: b1f61890b41a0d682d3e3c279d55c50a
+      size: 74
