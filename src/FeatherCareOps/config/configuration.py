@@ -96,7 +96,9 @@ class ConfigurationManager:
             training_data=Path('artifacts/data_ingestion/Chicken_disease'),
             all_params=self.params,
             params_image_size=self.params.IMAGE_SIZE,
-            params_batch_size=self.params.BATCH_SIZE
+            params_batch_size=self.params.BATCH_SIZE,
+            repo_owner=self.config.dagshub.repo_owner,
+            repo_name=self.config.dagshub.repo_name,
         )
         return eval_config
          

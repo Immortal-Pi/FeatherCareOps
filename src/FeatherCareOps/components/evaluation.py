@@ -2,6 +2,10 @@ import tensorflow as tf
 from FeatherCareOps.entity.config_entity import EvalutionConfig
 from pathlib import Path 
 from FeatherCareOps.utils.common import save_json
+import mlflow 
+import mlflow.keras
+import dagshub
+from urllib.parse import urlparse
 
 
 class Evaluation:
@@ -41,3 +45,16 @@ class Evaluation:
     def save_score(self):
         scores={'loss':self.score[0],'accuracy':self.score[1]}
         save_json(path=Path('scores.json'), data=scores)
+
+    def log_into_mlflow(self):
+        dagshub.init(repo_owner=self.config.repo_owner, repo_name=self.config.repo_name)
+        tracking_url_type_store=urlparse(mlflow.get_tracking_uri()).scheme
+        with mlflow.start_run():
+            mlflow.log_params(self.config.all_params)
+            mlflow.log_metrics({'loss':self.score[0],'accuracy':self.score[1]})
+
+            # model registry does not work with file store
+            if tracking_url_type_store!='file':
+                mlflow.keras.log_model(self.model,'model',registered_model_name='VGGModel')
+            else:
+                mlflow.keras.log_model(self.model,'model')

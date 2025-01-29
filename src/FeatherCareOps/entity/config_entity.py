@@ -44,3 +44,5 @@ class EvalutionConfig:
     all_params: dict 
     params_image_size: list 
     params_batch_size: int 
+    repo_owner: str
+    repo_name: str
