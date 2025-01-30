@@ -111,9 +111,9 @@ docker push chickenapp.azurecr.io/chicken:latest
     - Docker for containerization
     - Github actions CICD pipelines
 - **Web Framework**: Flask for model deployment
-- **Cloud Platform**: AWS for hosting the model
+- **Cloud Platform**: AZURE for hosting the model
 - **Version Control**: Git and GitHub
 - **Data Utilities**: YAML, JSON handling, and custom preprocessing functions
 
 ## Conclusion
-This project highlights the integration of MLOps principles in managing the entire machine learning lifecycle. While the focus was on building a disease classification prediction model using regression techniques, the core objective was to emphasize the importance of project structure, automation of workflows, and the use of tools like Docker for deployment. Additionally, a CI/CD pipeline was implemented to automate the testing, building, and deployment processes, ensuring consistent and reliable updates to the application. This project serves as a foundation for understanding how to design scalable, maintainable, and efficient ML pipelines, ensuring reproducibility and streamlined collaboration in real-world scenarios.
+This project highlights the integration of MLOps principles in managing the entire machine learning lifecycle. While the focus was on building a chicken disease classification prediction model using neural networks, the core objective was to emphasize the importance of project structure, automation of workflows, and the use of tools like Docker for deployment. Additionally, a CI/CD pipeline was implemented to automate the testing, building, and deployment processes, ensuring consistent and reliable updates to the application. This project serves as a foundation for understanding how to design scalable, maintainable, and efficient ML pipelines, ensuring reproducibility and streamlined collaboration in real-world scenarios.
