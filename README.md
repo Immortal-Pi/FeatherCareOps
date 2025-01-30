@@ -86,7 +86,7 @@ dagshub.init(repo_owner='your-github-username', repo_name='your-repository-name'
 ```
 
 ## 3. Create ECR repo to store/save docker image 
-    - save the URI: '011528265658.dkr.ecr.us-east-2.amazonaws.com/feathercareops' 
+    - save the URI: '011528265658.dkr.ecr.us-east-1.amazonaws.com/feathercare' 
 
 ## 4. Create EC2 machine (Ubuntu)
 
