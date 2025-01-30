@@ -62,11 +62,17 @@ dagshub.init(repo_owner='your-github-username', repo_name='your-repository-name'
 ```bash 
 - mlflow ui 
 ```
+![Mlflow1](https://github.com/Immortal-Pi/FeatherCareOps/blob/main/output/mlfllow.png)
+
+![Mlflow2](https://github.com/Immortal-Pi/FeatherCareOps/blob/main/output/mlflow2.png)
 
 ### tensorboard 
 ```bash
 tensorboard --logdir artifacts/prepare_callbacks/tensorboard_log_dir/
 ```
+![Tensorboard1](https://github.com/Immortal-Pi/FeatherCareOps/blob/main/output/tensorboard1.JPG)
+
+![Tensorboard2](https://github.com/Immortal-Pi/FeatherCareOps/blob/main/output/tensorboard2.JPG)
 
 ## AZURE-CICD-Deployment-with-Github-Actions
 
@@ -95,7 +101,7 @@ docker push chickenapp.azurecr.io/chicken:latest
 
 ## Demo 
 
-
+![Demo](https://github.com/Immortal-Pi/FeatherCareOps/blob/main/output/demo.gif)
 
 ## Tech Stack 
 
