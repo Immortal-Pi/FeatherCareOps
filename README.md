@@ -63,44 +63,30 @@ dagshub.init(repo_owner='your-github-username', repo_name='your-repository-name'
 - mlflow ui 
 ``` 
 
-## AWS CICD Deployment with Github Actions
+## AZURE-CICD-Deployment-with-Github-Actions
 
-    1. Login to AWS console 
-    2. Create IAM use for deployment 
-
+### Save pass: 
 ```bash
-# with specific access
-    1. ECR access
-    2. ECR Elastic Container 
 
-# Description: About the deployment 
-    1. Build docker image of the source code 
-    2. Push the docker imange to ECR
-    3. Launch your EC2 
-    4. Pull your image from ECR in EC2 
-    5. Launch your docker image in EC2 
-
-# Policy 
-    1. AmazonEC2ContainerRegistryFullAccess
-    2. AmazonEC2FullAccess
 ```
 
-## 3. Create ECR repo to store/save docker image 
-    - save the URI: '011528265658.dkr.ecr.us-east-1.amazonaws.com/feathercare' 
-
-## 4. Create EC2 machine (Ubuntu)
-
-## 5. Open EC2 and install docker in EC2 Machine 
-```bash
-# installation of docker on the virtual machine
-    sudo apt-get update -y
-    sudo apt-get upgrade
-    #required
-    curl -fsSL https://get.docker.com -o get-docker.sh
-    sudo sh get-docker.sh
-    sudo usermod -aG docker ubuntu
-    newgrp docker
+### Run from terminal 
+```bash 
+docker build -t chickenapp.azurecr.io/chicken:latest.
 ```
+```bash 
+docker login chickenapp.azurecr.io
+```
+```bash 
+docker push chickenapp.azurecr.io/chicken:latest
+```
+
+###  Deployment Steps:
+1. Build the Docker image of the Source Code
+2. Push the Docker image to Container Registry
+3. Launch the Web App Server in Azure
+4. Pull the Docker image from the container registry to Web App server and run
+
 
 ## Demo 
 
