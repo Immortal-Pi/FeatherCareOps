@@ -61,7 +61,12 @@ dagshub.init(repo_owner='your-github-username', repo_name='your-repository-name'
 ### mlflow experiments 
 ```bash 
 - mlflow ui 
-``` 
+```
+
+### tensorboard 
+```bash
+tensorboard --logdir artifacts/prepare_callbacks/tensorboard_log_dir/
+```
 
 ## AZURE-CICD-Deployment-with-Github-Actions
 
