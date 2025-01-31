@@ -74,7 +74,7 @@ class ConfigurationManager:
         params=self.params
         training_data=os.path.join(self.config.data_ingestion.unzip_dir,'Chicken_disease')
         create_directories([
-            Path(training.root_dir)
+            Path(training.root_dir), Path(training.copy_dir)
         ])
 
         training_config=TrainingConfig(
@@ -82,6 +82,7 @@ class ConfigurationManager:
             trained_model_path=Path(training.trained_model_path),
             updated_base_model_path=Path(prepare_base_model.updated_base_model_path),
             training_data=Path(training_data),
+            copy_path=Path(training.copy_path),
             params_epochs=params.EPOCHS,
             params_batch_size=params.BATCH_SIZE,
             params_image_size=params.IMAGE_SIZE,

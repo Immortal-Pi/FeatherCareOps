@@ -83,13 +83,13 @@ tensorboard --logdir artifacts/prepare_callbacks/tensorboard_log_dir/
 
 ### Run from terminal 
 ```bash 
-docker build -t chickenapp.azurecr.io/chicken:latest.
+docker build -t feathercare.azurecr.io/feathercare:latest .
 ```
 ```bash 
-docker login chickenapp.azurecr.io
+docker login feathercare.azurecr.io
 ```
 ```bash 
-docker push chickenapp.azurecr.io/chicken:latest
+docker push feathercare.azurecr.io/feathercare:latest
 ```
 
 ###  Deployment Steps:
